@@ -1,4 +1,4 @@
-# Ex1offLine
+# Elevator
 # Building Builds a building given a minimum floor, a maximum floor, and an array of # elevators. We then built a department
 # This task deals with the offline problem of elevators, for the purpose of # # # # # simplifying the problem we have divided the problem into stages. First we built a #department
 # Section which creates sections of readings. The variables of the department are: #list of readings, condition, minimum, and maximum, number of stops, and the floor # # where the Section ends. We then built an Elevator class which builds an elevator. # The elevator has an array of Sections that it must perform, so the class variables # are: floor time at which the elevator will complete all readings, index, stop # # # time, movement start time, opening time, closing time, maximum, minimum, speed, # # id, Sections list. We then built a department
