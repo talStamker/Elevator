@@ -13,6 +13,21 @@
   ]
 }
 </code></pre>
+
+### create csv file and edit it to something in a form like this:
+
+<pre><code class="clipboard-copy">
+ElevatorCall,1.0,2,5,-1,0
+ElevatorCall,2.0,3,7,-1,0
+ElevatorCall,3.0,10,1,-1,0
+</code></pre>
+
+### Run the line:
+
+<pre><code class="clipboard-copy">
+python Ex1.py <path_to_building.json> <path_to_calls.csv> <output_file.csv>
+</code></pre>
+
 ### lets explain about the files:
 ## Call.py:
 ### elemnets:
