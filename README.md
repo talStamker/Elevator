@@ -2,14 +2,30 @@
 ### This task deals with the offline problem of elevators
 ## How to run this?
 ### create json file and edit it to something in a form like this:
-### ```{
+<div>
+  <pre>
+    <code id="codeBlock">
+{
   "_minFloor": 0,
   "_maxFloor": 10,
   "_elevators": [
     {"_id": 1, "_speed": 1.0, "_minFloor": 0, "_maxFloor": 10, "_closeTime": 1.0, "_openTime": 1.0, "_startTime": 1.0, "_stopTime": 1.0},
     {"_id": 2, "_speed": 1.5, "_minFloor": 0, "_maxFloor": 10, "_closeTime": 1.0, "_openTime": 1.0, "_startTime": 1.0, "_stopTime": 1.0}
   ]
-}```
+}
+    </code>
+  </pre>
+  <button onclick="copyCode()">Copy Code</button>
+</div>
+
+<script>
+function copyCode() {
+    const code = document.getElementById('codeBlock').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+        alert('Code copied to clipboard!');
+    });
+}
+</script>
 ### lets explain about the files:
 ## Call.py:
 ### elemnets:
