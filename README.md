@@ -3,8 +3,7 @@
 ## How to run this?
 ### create json file and edit it to something in a form like this:
 <div>
-  <pre>
-    <code id="codeBlock">
+  <pre id="jsonContent">
 {
   "_minFloor": 0,
   "_maxFloor": 10,
@@ -13,16 +12,17 @@
     {"_id": 2, "_speed": 1.5, "_minFloor": 0, "_maxFloor": 10, "_closeTime": 1.0, "_openTime": 1.0, "_startTime": 1.0, "_stopTime": 1.0}
   ]
 }
-    </code>
   </pre>
-  <button onclick="copyCode()">Copy Code</button>
+  <button onclick="copyJson()">Copy JSON</button>
 </div>
 
 <script>
-function copyCode() {
-    const code = document.getElementById('codeBlock').innerText;
-    navigator.clipboard.writeText(code).then(() => {
-        alert('Code copied to clipboard!');
+function copyJson() {
+    const content = document.getElementById('jsonContent').innerText.trim();
+    navigator.clipboard.writeText(content).then(() => {
+        alert('JSON copied to clipboard!');
+    }).catch((err) => {
+        console.error('Could not copy text: ', err);
     });
 }
 </script>
