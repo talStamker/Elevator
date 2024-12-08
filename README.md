@@ -3,14 +3,7 @@
 ## How to run this?
 ### create json file and edit it to something in a form like this:
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Copy JSON</title>
-</head>
-<body>
-  <div>
-    <pre id="jsonContent">
+<pre><code class="clipboard-copy">
 {
   "_minFloor": 0,
   "_maxFloor": 10,
@@ -19,23 +12,7 @@
     {"_id": 2, "_speed": 1.5, "_minFloor": 0, "_maxFloor": 10, "_closeTime": 1.0, "_openTime": 1.0, "_startTime": 1.0, "_stopTime": 1.0}
   ]
 }
-    </pre>
-    <button onclick="copyJson()">Copy JSON</button>
-  </div>
-
-  <script>
-  function copyJson() {
-      const content = document.getElementById('jsonContent').innerText.trim();
-      navigator.clipboard.writeText(content).then(() => {
-          alert('JSON copied to clipboard!');
-      }).catch((err) => {
-          console.error('Could not copy text: ', err);
-      });
-  }
-  </script>
-</body>
-</html>
-
+</code></pre>
 ### lets explain about the files:
 ## Call.py:
 ### elemnets:
